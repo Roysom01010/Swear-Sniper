@@ -1,43 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Script Profanity Filter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Script Profanity Filter</h1>
+    <main class="container">
+        <header>
+            <h1>Script Profanity Filter</h1>
+        </header>
         
-        <div class="box">
-            <label>Paste your script here:</label>
-            <textarea id="scriptInput" rows="10"></textarea>
-        </div>
+        <section class="box">
+            <label for="scriptInput">Paste your script here:</label>
+            <textarea id="scriptInput" rows="10" aria-label="Script input area"></textarea>
+        </section>
 
         <div class="filters">
             <div class="filter-box">
-                <label>Filter language from list:</label>
-                <select id="languageSelect" multiple></select>
+                <label for="languageSelect">Filter language from list:</label>
+                <select id="languageSelect" multiple aria-label="Select languages to filter"></select>
             </div>
             
             <div class="filter-box">
-                <label>Filter as per Language Type:</label>
-                <select id="languageType" multiple></select>
+                <label for="languageType">Filter as per Language Type:</label>
+                <select id="languageType" multiple aria-label="Select language types"></select>
             </div>
 
             <div class="filter-box">
-                <label>Filter by Age Rating:</label>
-                <select id="ageRating"></select>
+                <label for="ageRating">Filter by Age Rating:</label>
+                <select id="ageRating" aria-label="Select age rating"></select>
             </div>
         </div>
 
-        <button id="runButton">RUN</button>
+        <button id="runButton">
+            <span class="button-text">RUN</span>
+            <div class="spinner hidden"></div>
+        </button>
 
-        <div id="results">
+        <section id="results">
             <h3>Results:</h3>
             <div id="wordCount"></div>
             <div id="flaggedWords"></div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script src="app.js"></script>
 </body>
