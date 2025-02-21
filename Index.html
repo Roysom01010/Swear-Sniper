@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Script Profanity Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Script Profanity Filter</h1>
+        
+        <div class="box">
+            <label>Paste your script here:</label>
+            <textarea id="scriptInput" rows="10"></textarea>
+        </div>
+
+        <div class="filters">
+            <div class="filter-box">
+                <label>Filter language from list:</label>
+                <select id="languageSelect" multiple></select>
+            </div>
+            
+            <div class="filter-box">
+                <label>Filter as per Language Type:</label>
+                <select id="languageType" multiple></select>
+            </div>
+
+            <div class="filter-box">
+                <label>Filter by Age Rating:</label>
+                <select id="ageRating"></select>
+            </div>
+        </div>
+
+        <button id="runButton">RUN</button>
+
+        <div id="results">
+            <h3>Results:</h3>
+            <div id="wordCount"></div>
+            <div id="flaggedWords"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
