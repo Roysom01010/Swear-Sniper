@@ -1,7 +1,7 @@
 let foulWords = [];
 
 // Load foul words data
-fetch('foul-words.json')
+fetch('https://raw.githubusercontent.com/Roysom01010/Swear-Sniper/main/foul-words.json')
     .then(response => response.json())
     .then(data => {
         foulWords = data;
