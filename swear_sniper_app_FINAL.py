@@ -247,8 +247,8 @@ foul_words_df = load_foul_words()
 st.set_page_config(page_title="Swear Sniper", layout="centered")
 st.title(" Swear Sniper")
 st.markdown("Created by **Soumarghyo Roy**")
-st.markdown ("Copyright (c) 2025 Soumarghyo Roy. All Rights Reserved.")
-st.markdown (" Protected by applicable Indian and International Copyright Laws. Unauthorized use is prohibited.")
+st.markdown ("Copyright (c) 2025 Soumarghyo Roy.")
+st.markdown ("Unauthorized use is prohibited.")
 
 # Input boxes
 script = st.text_area("📜 Paste your script here:", height=300)
